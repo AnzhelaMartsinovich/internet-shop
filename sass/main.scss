@@ -1,0 +1,18 @@
+@import"resetCss";
+@import"colors";
+@import"header";
+@import"common";
+@import"popularGoods";
+@import"discountedGoods";
+@import"about";
+@import"news";
+@import"footer";
+
+body {
+  min-width: 320px;
+  font-family: 'Roboto Slab', serif;
+}
+.container{
+  margin: 0 auto;
+  max-width: 1320px;
+}

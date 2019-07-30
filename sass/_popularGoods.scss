@@ -1,0 +1,26 @@
+.popular-goods{
+	margin-bottom: 30px;
+}
+.btn-popular {
+	padding: 8px;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 20%;
+	background-color: $light-beige;
+	color: white;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	&:hover {
+		background-color: $header-top-nav;
+	}
+	&__right{
+		right: -20px;
+	}
+	&__left {
+		left: -20px;
+	}
+}
+
