@@ -18,8 +18,15 @@
 	}
 	&__right {
 		right: -20px;
+		& img{
+			width: 10px;
+		}
 	}
 	&__left {
 		left: -20px;
+		& img {
+			width: 10px;
+			transform: rotate(180deg);
+		}
 	}
 }

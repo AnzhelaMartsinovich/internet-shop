@@ -6,20 +6,50 @@ button{
 	text-align: center;
 	margin-bottom: 42px;
 }
-.good-item {
-	flex-direction: column;
-	border: 1px solid $light-beige;
-	padding: 10px;
-	margin: 20px;
-	outline: none;
-	&:hover {
-		box-shadow: 0 20px 30px 0 rgba(79, 45, 0, 0.1), 0 7px 30px 0 rgba(79, 45, 0, 0.1);
+.good {
+	&-header {
+		margin-bottom: 18px;
+		text-transform: uppercase;
+		color: $light-beige;
+		font-size: 14px;
+		position: relative;
+		margin: 0;
+		font-size: 1em;
+		height: 3.8em;
+		overflow: hidden;
 	}
-}
-.good-card{
-	&__top{
-		display: flex;
-		margin-bottom: 30px;
+	&-price {
+		margin-top: 10px;
+		color: $light-beige;
+		font-size: 14px;
+	}
+	&-img {
+		padding-bottom: 15px;
+		height: 150px;
+		width: 100%;
+		vertical-align: middle;
+		object-fit: cover;
+	}
+	&-item {
+		flex-direction: column;
+		border: 1px solid $light-beige;
+		padding: 10px;
+		margin: 20px;
+		outline: none;
+		&:hover {
+			box-shadow: 0 20px 30px 0 rgba(79, 45, 0, 0.1), 0 7px 30px 0 rgba(79, 45, 0, 0.1);
+			-webkit-transition: -webkit-box-shadow .7s;
+			transition: -webkit-box-shadow .7s;
+			transition: box-shadow .7s;
+			transition: box-shadow .7s,
+				-webkit-box-shadow .7s;
+		}
+	}
+	&-card {
+		&__top {
+			display: flex;
+			margin-bottom: 30px;
+		}
 	}
 }
 .marker {
@@ -36,18 +66,6 @@ button{
 	}
 	&-action {
 		background-color: $red-common;
-	}
-}
-.good {
-	&-header {
-		text-transform: uppercase;
-		color: $light-beige;
-		font-size: 14px;
-		margin-bottom: 18px;
-	}
-	&-price {
-		color: $light-beige;
-		font-size: 14px;
 	}
 }
 .prices-block {

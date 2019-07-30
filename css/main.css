@@ -406,6 +406,33 @@ button {
   margin-bottom: 42px;
 }
 
+.good-header {
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  color: #e5d2c4;
+  font-size: 14px;
+  position: relative;
+  margin: 0;
+  font-size: 1em;
+  height: 3.8em;
+  overflow: hidden;
+}
+
+.good-price {
+  margin-top: 10px;
+  color: #e5d2c4;
+  font-size: 14px;
+}
+
+.good-img {
+  padding-bottom: 15px;
+  height: 150px;
+  width: 100%;
+  vertical-align: middle;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .good-item {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -420,6 +447,10 @@ button {
 .good-item:hover {
   -webkit-box-shadow: 0 20px 30px 0 rgba(79, 45, 0, 0.1), 0 7px 30px 0 rgba(79, 45, 0, 0.1);
           box-shadow: 0 20px 30px 0 rgba(79, 45, 0, 0.1), 0 7px 30px 0 rgba(79, 45, 0, 0.1);
+  -webkit-transition: -webkit-box-shadow .7s;
+  transition: -webkit-box-shadow .7s;
+  transition: box-shadow .7s;
+  transition: box-shadow .7s, -webkit-box-shadow .7s;
 }
 
 .good-card__top {
@@ -445,18 +476,6 @@ button {
 
 .marker-action {
   background-color: #ff0000;
-}
-
-.good-header {
-  text-transform: uppercase;
-  color: #e5d2c4;
-  font-size: 14px;
-  margin-bottom: 18px;
-}
-
-.good-price {
-  color: #e5d2c4;
-  font-size: 14px;
 }
 
 .prices-block {
@@ -538,8 +557,18 @@ button {
   right: -20px;
 }
 
+.btn-popular__right img {
+  width: 10px;
+}
+
 .btn-popular__left {
   left: -20px;
+}
+
+.btn-popular__left img {
+  width: 10px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .discounted-goods {
@@ -569,8 +598,18 @@ button {
   right: -20px;
 }
 
+.btn-discounted__right img {
+  width: 10px;
+}
+
 .btn-discounted__left {
   left: -20px;
+}
+
+.btn-discounted__left img {
+  width: 10px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .about {
