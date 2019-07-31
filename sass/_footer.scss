@@ -1,5 +1,8 @@
 .footer{
 	background-color: $light-beige;
+	&-mobile {
+		display: none;
+	}
 	&-contacts{
 		display: flex;
 		align-items: center;
@@ -7,9 +10,8 @@
 		padding-bottom: 50px;
 		&-item {
 			-webkit-box-flex: 0;
-			-ms-flex: 0 0 33%;
-			flex: 0 0 33%;
-			max-width: 33%;
+			-ms-flex: 0 0 31%;
+			flex: 0 0 31%;
 			color: $brown-main;
 		}
 			& a {
@@ -21,6 +23,10 @@
 			}
 	}
 	&-logo{
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 6%;
+		flex: 0 0 6%;
+		margin-right: 60px;
 		& img{
 			width: 80px;
 		}
@@ -33,6 +39,11 @@
 			-webkit-box-flex: 0;
 			-ms-flex: 0 0 31%;
 			flex: 0 0 31%;
+		}
+		&-items:last-child {
+			-webkit-box-flex: 0;
+			-ms-flex: 0 0 31%;
+			flex: 0 0 20%;
 		}
 		&-item{
 			padding-bottom: 8px;
