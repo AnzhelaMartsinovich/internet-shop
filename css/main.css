@@ -536,14 +536,12 @@ button {
 
 .btn-popular {
   padding: 8px;
-  font-size: 20px;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   height: 20%;
   background-color: #e5d2c4;
-  color: white;
   border: none;
   outline: none;
   border-radius: 3px;
@@ -912,6 +910,241 @@ button {
 .main404-main-text__link {
   color: #fc5a1f;
   font-weight: 700;
+}
+
+.main-slider {
+  margin-bottom: 45px;
+}
+
+.main-slider-item {
+  position: relative;
+  outline: none;
+}
+
+.main-slider-title {
+  padding-bottom: 30px;
+  color: #0075d2;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.main-slider-subtitle a {
+  color: #0075d2;
+  text-decoration: underline;
+  outline: none;
+}
+
+.main-slider-descr {
+  position: absolute;
+  padding: 40px 70px 50px 40px;
+  right: 10%;
+  bottom: 10%;
+  width: 35%;
+  background-color: white;
+}
+
+.btn-main-slider {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 10%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+
+.btn-main-slider:hover {
+  background-color: #fc5a1f;
+}
+
+.btn-main-slider__right {
+  right: 3%;
+}
+
+.btn-main-slider__right img {
+  width: 20px;
+}
+
+.btn-main-slider__left {
+  left: 3%;
+  z-index: 1;
+}
+
+.btn-main-slider__left img {
+  width: 20px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.main-slider-items .slick-dots {
+  bottom: 4%;
+}
+
+.main-slider-items li {
+  width: 125px;
+  height: 8px;
+  background-color: #a6a4a4;
+  border-radius: 10px;
+}
+
+.main-slider-items li.slick-active {
+  background-color: white;
+}
+
+.main-slider-items li.slick-active button:before {
+  color: transparent;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.main-slider-items li button:before {
+  color: transparent;
+  background-color: white;
+  border-radius: 8px;
+  width: 125px;
+  height: 8px;
+}
+
+.main-slider-items li button {
+  width: 125px;
+  height: 8px;
+  background-color: transparent;
+}
+
+.categories-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.categories-items__top {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.categories-items__top-left {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 27%;
+  flex: 0 0 27%;
+  max-width: 27%;
+}
+
+.categories-items__top-center {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.categories-items__top-right {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 48%;
+  flex: 0 0 48%;
+  max-width: 48%;
+}
+
+.categories-items__bottom {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.categories-items__bottom-left {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 27%;
+  flex: 0 0 27%;
+  max-width: 27%;
+}
+
+.categories-items__bottom-right {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 73%;
+  flex: 0 0 73%;
+  max-width: 73%;
+}
+
+.categories-items__bottom-small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -8px;
+  margin-left: -8px;
+}
+
+.categories-item {
+  background: #e5d2c4;
+  border-radius: 3px;
+  margin-bottom: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.categories-item-text {
+  position: relative;
+  z-index: 1;
+  padding: 25px 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  opacity: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.categories-item-img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.categories-item-descr {
+  width: 70%;
+  color: #433e3d;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.categories-item-small {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  margin-right: 8px;
+  margin-left: 8px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 31.6%;
+  flex: 0 0 31.6%;
+  max-width: 31.6%;
+}
+
+.h185 {
+  height: 185px;
+}
+
+.h386 {
+  height: 386px;
 }
 
 body {
