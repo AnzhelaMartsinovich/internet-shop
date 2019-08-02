@@ -64,6 +64,14 @@
 		margin-bottom: 16px;
 		position: relative;
 		overflow: hidden;
+		&-bg {
+			background: url(../img/categories/boiler.jpg) no-repeat;
+			background-size: cover;
+			&-big{
+				background: url(../img/categories/gutter_system.jpg) no-repeat;
+				background-size: cover;
+			}
+		}
 		&-text{
 			position: relative;
 			z-index: 1;
@@ -77,6 +85,7 @@
 			width: 100%;
 			opacity: 1;
 			flex-direction: column;
+			justify-content: flex-end;
 		}
 		&-img{
 			width: 80px;

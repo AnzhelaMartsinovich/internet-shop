@@ -1090,6 +1090,16 @@ button {
   overflow: hidden;
 }
 
+.categories-item-bg {
+  background: url(../img/categories/boiler.jpg) no-repeat;
+  background-size: cover;
+}
+
+.categories-item-bg-big {
+  background: url(../img/categories/gutter_system.jpg) no-repeat;
+  background-size: cover;
+}
+
 .categories-item-text {
   position: relative;
   z-index: 1;
@@ -1113,6 +1123,9 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .categories-item-img {
