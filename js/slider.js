@@ -5,6 +5,7 @@ $('.main-slider-items').slick({
 	// autoplay: true,
 	arrows: true,
 	// autoplaySpeed: 2000,
+	adaptiveHeight: true,
 	prevArrow: '<button class="btn-main-slider btn-main-slider__left" type="button"><img src="./img/icon/arrow_slider.svg" alt=""></button>',
 	nextArrow: '<button class="btn-main-slider btn-main-slider__right" type="button"><img src="./img/icon/arrow_slider.svg" alt=""></button>'
 });
