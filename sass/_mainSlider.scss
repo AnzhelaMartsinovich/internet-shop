@@ -21,7 +21,7 @@
 		position: absolute;
 		padding: 40px 70px 50px 40px;
 		right: 10%;
-		bottom: 10%;
+		bottom: 45%;
 		width: 35%;
 		background-color: white;
 	}
@@ -85,4 +85,9 @@
 			}
 		} 
 		
+}
+.slick-dotted.slick-slider{
+	height: 450px;
+	margin-bottom: 30px;
+	overflow-y: hidden;
 }
