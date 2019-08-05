@@ -1,9 +1,8 @@
 .categories{
+	margin-bottom: 45px;
 	&-items{
 		display: flex;
 		flex-wrap: wrap;
-		// margin-right: -8px;
-		// margin-left: -8px;
 		&__top {
 			position: relative;
 			width: 100%;
@@ -55,6 +54,7 @@
 				flex-wrap: wrap;
 				margin-right: -8px;
 				margin-left: -8px;
+				justify-content: space-around;
 			}
 		}
 	}
@@ -64,6 +64,9 @@
 		margin-bottom: 16px;
 		position: relative;
 		overflow: hidden;
+		&:hover {
+			background-color: darken($light-beige, 5%);
+		}
 		&-bg {
 			position: relative;
 			background: url(../img/categories/boiler.jpg) no-repeat;
@@ -78,6 +81,9 @@
 				height: 35%;
 				background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10% rgba(255, 255, 255, 1) 30%, rgba(229, 210, 196, 1) 63%, rgba(229, 210, 196, 1) 100%);
 				z-index: 0;
+			}
+			&:hover::before {
+				background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10% rgba(255, 255, 255, 1) 30%, darken(rgb(229, 210, 196), 5%) 63%, darken(rgb(229, 210, 196), 5%) 100%);
 			}
 			&-big{
 				background: url(../img/categories/gutter_system.jpg) no-repeat;
@@ -109,20 +115,31 @@
 			font-weight: 700;
 			text-transform: uppercase;
 		}
+		&-small {
+			position: relative;
+			width: 100%;
+			min-height: 1px;
+			margin-right: 8px;
+			margin-left: 8px;
+			-webkit-box-flex: 0;
+			-ms-flex: 0 0 31%;
+			flex: 0 0 31%;
+			max-width: 31%;
+		}
 	}
 
 }
-.categories-item-small {
-	position: relative;
-	width: 100%;
-	min-height: 1px;
-	margin-right: 8px;
-	margin-left: 8px;
-	-webkit-box-flex: 0;
-	-ms-flex: 0 0 31.6%;
-	flex: 0 0 31.6%;
-	max-width: 31.6%;
-}
+// .categories-item-small {
+// 	position: relative;
+// 	width: 100%;
+// 	min-height: 1px;
+// 	margin-right: 8px;
+// 	margin-left: 8px;
+// 	-webkit-box-flex: 0;
+// 	-ms-flex: 0 0 31.6%;
+// 	flex: 0 0 31.6%;
+// 	max-width: 31.6%;
+// }
 .h185 {
 	height: 185px;
 }
