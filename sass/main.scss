@@ -1,6 +1,8 @@
 @import"resetCss";
+@import"fontello";
 @import"colors";
 @import"header";
+@import"mainSlider";
 @import"common";
 @import"popularGoods";
 @import"discountedGoods";
@@ -8,8 +10,14 @@
 @import"news";
 @import"footer";
 @import"404";
-@import"mainSlider";
 @import"categories";
+@import"bread";
+@import"catalog";
+@import"filters";
+@import"product";
+@import"tabs";
+@import"card";
+@import"basket";
 
 
 
@@ -22,4 +30,10 @@ body {
   max-width: 1320px;
   width: 95%;
 }
+ .container-card {
+   margin: 0 auto;
+   max-width: 1320px;
+   width: 95%;
+ }
+
 @import"media";
